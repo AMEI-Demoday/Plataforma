@@ -41,10 +41,17 @@
             </div>
 
             <div class="login-input">
-                <input type="button" value="Registrar">
+                <input type="button" id="BtnRegister" value="Registrar" onclick="RegisterClick()">
             </div>
         </form>
     </div>
+
+    <script>
+        function RegisterClick(){
+            var BtnRegister = document.getElementById('BtnRegister');
+            BtnRegister = location.href = "register.html"
+        }
+    </script>
 </body>
 
 </html>
