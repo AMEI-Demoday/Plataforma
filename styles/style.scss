@@ -510,6 +510,7 @@ aside {
             font-weight: bold;
             outline: none;
             margin: 1.5rem;
+            color: $dark-color;
         }
 
         input::placeholder {
@@ -602,6 +603,7 @@ aside {
             font-weight: bold;
             outline: none;
             margin: 1rem;
+            color: $dark-color;
         }
 
         input::placeholder {
@@ -666,6 +668,7 @@ aside {
             font-weight: bold;
             outline: none;
             margin: 0.5rem;
+            color: $dark-color;
         }
 
         input::placeholder {
@@ -793,6 +796,7 @@ aside {
                 margin: 0.5rem;
                 padding: 1rem;
                 font-size: 30px;
+                color: $dark-color;
             }
 
             input::placeholder {

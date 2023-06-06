@@ -511,6 +511,7 @@ aside .container .content p {
   font-weight: bold;
   outline: none;
   margin: 1.5rem;
+  color: #000;
 }
 .container-register form input::-moz-placeholder {
   opacity: 0.2;
@@ -606,6 +607,7 @@ aside .container .content p {
   font-weight: bold;
   outline: none;
   margin: 1rem;
+  color: #000;
 }
 .container-reset form input::-moz-placeholder {
   opacity: 0.3;
@@ -671,6 +673,7 @@ aside .container .content p {
   font-weight: bold;
   outline: none;
   margin: 0.5rem;
+  color: #000;
 }
 .container-new-password form input::-moz-placeholder {
   opacity: 0.3;
@@ -791,6 +794,7 @@ aside .container .content p {
   margin: 0.5rem;
   padding: 1rem;
   font-size: 30px;
+  color: #000;
 }
 .container-login form .login-input input::-moz-placeholder {
   font-size: 30px;
