@@ -226,7 +226,7 @@ aside {
         .title {
             width: 90%;
             height: 60px;
-            background: $secondary-color;
+            background: $dark-color;
             color: $default-color;
             font-size: 150%;
             text-align: center;
@@ -251,13 +251,17 @@ aside {
         .card-button {
             width: 90%;
             height: 60px;
-            background: $secondary-color;
+            background: $dark-color;
             color: $default-color;
             font-size: 150%;
             text-align: center;
             border-radius: 8px;
             margin: 1rem;
             cursor: pointer;
+
+            &:hover {
+                background: $secondary-color;
+            }
 
             h3 {
                 height: 100%;
@@ -285,6 +289,10 @@ aside {
             width: 15%;
             height: 50px;
             border-radius: 12px;
+
+            &:hover {
+                background: $alternative-color;
+            }
         }
     }
 }
@@ -375,6 +383,10 @@ aside {
             text-transform: uppercase;
             margin: 1rem;
             cursor: pointer;
+
+            &:hover {
+                background: $alternative-color;
+            }
         }
 
         button:nth-child(2) {
@@ -388,6 +400,10 @@ aside {
             text-transform: uppercase;
             margin: 1rem;
             cursor: pointer;
+
+            &:hover {
+                background: $primary-color;
+            }
         }
     }
 
@@ -440,6 +456,7 @@ aside {
                 @include FlexCenter();
                 height: 60px;
                 font-size: 26px;
+                opacity: 0.3;
             }
 
             input[type=email] {
@@ -453,6 +470,10 @@ aside {
                 font-weight: bold;
                 cursor: pointer;
                 margin: 2rem;
+
+                &:hover {
+                    background: $alternative-color;
+                }
             }
         }
 
@@ -472,6 +493,7 @@ aside {
             @include FlexCenter();
             height: 60px;
             font-size: 26px;
+            opacity: 0.3;
         }
     }
 }
@@ -510,7 +532,6 @@ aside {
             font-weight: bold;
             outline: none;
             margin: 1.5rem;
-            color: $dark-color;
         }
 
         input::placeholder {
@@ -603,7 +624,6 @@ aside {
             font-weight: bold;
             outline: none;
             margin: 1rem;
-            color: $dark-color;
         }
 
         input::placeholder {
@@ -668,7 +688,6 @@ aside {
             font-weight: bold;
             outline: none;
             margin: 0.5rem;
-            color: $dark-color;
         }
 
         input::placeholder {
@@ -754,7 +773,169 @@ aside {
     }
 }
 
-@media only screen and (max-width: 760px) {}
+@media only screen and (max-width: 970px) {
+    .container-about {
+        height: 100vh;
+        @include FlexCenter();
+        flex-direction: column;
+
+        .paragrafo {
+            display: none;
+        }
+
+        .about {
+            .container-iframe {
+
+                .iframe {
+                    display: none;
+                }
+
+                .iframe-paragrafo {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .container-plans {
+
+        .card-plans {
+            width: 50%;
+        }
+
+        .card-plans:nth-child(1),
+        .card-plans:nth-child(3),
+        .card-plans:nth-child(5) {
+            display: none;
+        }
+
+        .plans-header {
+            h2 {
+                font-size: 100%;
+                width: 20%;
+                height: 50px;
+            }
+        }
+
+        .plans-footer {
+
+            h3 {
+                font-size: 100%;
+                width: 20%;
+                height: 50px;
+            }
+        }
+    }
+
+    .container-events {
+
+        h2 {
+            font-size: 50px;
+        }
+
+        .content-events {
+            .calendar {
+
+                .timer {
+                    width: 100px;
+                    height: 80px;
+
+                    p {
+                        height: 80px;
+                        font-size: 40px;
+                    }
+                }
+
+                .timer-info {
+                    width: 100px;
+                    height: 25px;
+
+                    p {
+                        height: 25px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .info-events {
+            p {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 60px;
+            }
+        }
+
+        .info-events-btn {
+
+            button {
+                width: 230px;
+                height: 60px;
+                font-size: 20px;
+            }
+
+            button:nth-child(2) {
+                width: 230px;
+                height: 60px;
+                font-size: 20px;
+            }
+
+        }
+
+        h4 {
+            @include FlexCenter();
+            align-items: end;
+            height: 10%;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .container-contact {
+
+        form {
+            height: 85%;
+
+            label {
+                font-size: 40px;
+            }
+
+            .area {
+
+                input {
+                    width: 39%;
+                    font-size: 20px;
+                    margin: 0rem 1%;
+                }
+
+                input::placeholder {
+                    font-size: 20px;
+                }
+
+                input[type=email] {
+                    margin: 1rem;
+                }
+
+                input[type=button] {
+                    margin: 1rem;
+                }
+            }
+
+            textarea {
+                height: 200px;
+                font-size: 20px;
+                margin: 0rem;
+            }
+
+            textarea::placeholder {
+                font-size: 20px;
+            }
+        }
+    }
+}
 
 
 .container-login {
@@ -796,7 +977,6 @@ aside {
                 margin: 0.5rem;
                 padding: 1rem;
                 font-size: 30px;
-                color: $dark-color;
             }
 
             input::placeholder {
@@ -840,4 +1020,49 @@ aside {
             }
         }
     }
+}
+
+@media only screen and (max-width: 760px) {
+    header {
+        .navbar {
+
+            a {
+                font-size: 18px;
+
+                &:nth-child(1) {
+                    font-size: 30px;
+                }
+            }
+
+            button {
+                width: 15%;
+                height: 40px;
+                font-size: 100%;
+            }
+        }
+    }
+
+    section {
+        .home-page {
+
+            h1 {
+                font-size: 70px;
+                margin: 1rem;
+            }
+
+            p {
+                width: 60%;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+
+    .support {
+        .support {
+            display: none;
+        }
+    }
+
+
 }

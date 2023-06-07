@@ -209,7 +209,7 @@ aside .container .content p {
 .container-plans .card-plans .title {
   width: 90%;
   height: 60px;
-  background: #232323;
+  background: #000;
   color: #FFF;
   font-size: 150%;
   text-align: center;
@@ -231,13 +231,16 @@ aside .container .content p {
 .container-plans .card-plans .card-button {
   width: 90%;
   height: 60px;
-  background: #232323;
+  background: #000;
   color: #FFF;
   font-size: 150%;
   text-align: center;
   border-radius: 8px;
   margin: 1rem;
   cursor: pointer;
+}
+.container-plans .card-plans .card-button:hover {
+  background: #232323;
 }
 .container-plans .card-plans .card-button h3 {
   height: 100%;
@@ -268,6 +271,9 @@ aside .container .content p {
   width: 15%;
   height: 50px;
   border-radius: 12px;
+}
+.container-plans .plans-footer h3:hover {
+  background: #fd8720;
 }
 
 .container-events {
@@ -359,6 +365,9 @@ aside .container .content p {
   margin: 1rem;
   cursor: pointer;
 }
+.container-events .info-events-btn button:hover {
+  background: #fd8720;
+}
 .container-events .info-events-btn button:nth-child(2) {
   width: 388px;
   height: 101px;
@@ -370,6 +379,9 @@ aside .container .content p {
   text-transform: uppercase;
   margin: 1rem;
   cursor: pointer;
+}
+.container-events .info-events-btn button:nth-child(2):hover {
+  background: #F27405;
 }
 .container-events h4 {
   display: flex;
@@ -427,6 +439,7 @@ aside .container .content p {
   align-items: center;
   height: 60px;
   font-size: 26px;
+  opacity: 0.3;
 }
 .container-contact form .area input::placeholder {
   display: flex;
@@ -434,6 +447,7 @@ aside .container .content p {
   align-items: center;
   height: 60px;
   font-size: 26px;
+  opacity: 0.3;
 }
 .container-contact form .area input[type=email] {
   width: 80%;
@@ -445,6 +459,9 @@ aside .container .content p {
   font-weight: bold;
   cursor: pointer;
   margin: 2rem;
+}
+.container-contact form .area input[type=button]:hover {
+  background: #fd8720;
 }
 .container-contact form textarea {
   width: 80%;
@@ -463,6 +480,7 @@ aside .container .content p {
   align-items: center;
   height: 60px;
   font-size: 26px;
+  opacity: 0.3;
 }
 .container-contact form textarea::placeholder {
   display: flex;
@@ -470,6 +488,7 @@ aside .container .content p {
   align-items: center;
   height: 60px;
   font-size: 26px;
+  opacity: 0.3;
 }
 
 .container-register {
@@ -511,7 +530,6 @@ aside .container .content p {
   font-weight: bold;
   outline: none;
   margin: 1.5rem;
-  color: #000;
 }
 .container-register form input::-moz-placeholder {
   opacity: 0.2;
@@ -607,7 +625,6 @@ aside .container .content p {
   font-weight: bold;
   outline: none;
   margin: 1rem;
-  color: #000;
 }
 .container-reset form input::-moz-placeholder {
   opacity: 0.3;
@@ -673,7 +690,6 @@ aside .container .content p {
   font-weight: bold;
   outline: none;
   margin: 0.5rem;
-  color: #000;
 }
 .container-new-password form input::-moz-placeholder {
   opacity: 0.3;
@@ -751,6 +767,120 @@ aside .container .content p {
     height: 115vh;
   }
 }
+@media only screen and (max-width: 970px) {
+  .container-about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-about .paragrafo {
+    display: none;
+  }
+  .container-about .about .container-iframe .iframe {
+    display: none;
+  }
+  .container-about .about .container-iframe .iframe-paragrafo {
+    width: 90%;
+  }
+  .container-plans .card-plans {
+    width: 50%;
+  }
+  .container-plans .card-plans:nth-child(1),
+  .container-plans .card-plans:nth-child(3),
+  .container-plans .card-plans:nth-child(5) {
+    display: none;
+  }
+  .container-plans .plans-header h2 {
+    font-size: 100%;
+    width: 20%;
+    height: 50px;
+  }
+  .container-plans .plans-footer h3 {
+    font-size: 100%;
+    width: 20%;
+    height: 50px;
+  }
+  .container-events h2 {
+    font-size: 50px;
+  }
+  .container-events .content-events .calendar .timer {
+    width: 100px;
+    height: 80px;
+  }
+  .container-events .content-events .calendar .timer p {
+    height: 80px;
+    font-size: 40px;
+  }
+  .container-events .content-events .calendar .timer-info {
+    width: 100px;
+    height: 25px;
+  }
+  .container-events .content-events .calendar .timer-info p {
+    height: 25px;
+    font-size: 10px;
+  }
+  .container-events .info-events p {
+    font-size: 30px;
+  }
+  .container-events .info-events h3 {
+    font-size: 60px;
+  }
+  .container-events .info-events-btn button {
+    width: 230px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .container-events .info-events-btn button:nth-child(2) {
+    width: 230px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .container-events h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: end;
+    height: 10%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .container-contact form {
+    height: 85%;
+  }
+  .container-contact form label {
+    font-size: 40px;
+  }
+  .container-contact form .area input {
+    width: 39%;
+    font-size: 20px;
+    margin: 0rem 1%;
+  }
+  .container-contact form .area input::-moz-placeholder {
+    font-size: 20px;
+  }
+  .container-contact form .area input::placeholder {
+    font-size: 20px;
+  }
+  .container-contact form .area input[type=email] {
+    margin: 1rem;
+  }
+  .container-contact form .area input[type=button] {
+    margin: 1rem;
+  }
+  .container-contact form textarea {
+    height: 200px;
+    font-size: 20px;
+    margin: 0rem;
+  }
+  .container-contact form textarea::-moz-placeholder {
+    font-size: 20px;
+  }
+  .container-contact form textarea::placeholder {
+    font-size: 20px;
+  }
+}
 .container-login {
   background: url(../imgs/Planos-2.jpg);
   background-size: contain;
@@ -794,7 +924,6 @@ aside .container .content p {
   margin: 0.5rem;
   padding: 1rem;
   font-size: 30px;
-  color: #000;
 }
 .container-login form .login-input input::-moz-placeholder {
   font-size: 30px;
@@ -832,4 +961,30 @@ aside .container .content p {
   text-decoration: none;
   color: #000;
   margin-left: 20%;
+}
+
+@media only screen and (max-width: 760px) {
+  header .navbar a {
+    font-size: 18px;
+  }
+  header .navbar a:nth-child(1) {
+    font-size: 30px;
+  }
+  header .navbar button {
+    width: 15%;
+    height: 40px;
+    font-size: 100%;
+  }
+  section .home-page h1 {
+    font-size: 70px;
+    margin: 1rem;
+  }
+  section .home-page p {
+    width: 60%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .support .support {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
