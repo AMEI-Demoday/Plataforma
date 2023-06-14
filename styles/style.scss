@@ -708,7 +708,6 @@ aside {
             font-size: 42px;
             font-weight: bold;
             outline: none;
-            margin: 1rem;
         }
 
         input::placeholder {
@@ -1113,10 +1112,6 @@ aside {
                     font-size: 30px;
                 }
 
-                input::placeholder {}
-
-                input[type=checkbox] {}
-
                 input[type=submit] {
                     font-size: 30px;
                 }
@@ -1133,4 +1128,248 @@ aside {
 
     }
 
+    .container-reset {
+
+        form {
+            width: 90%;
+
+            input {
+                width: 80%;
+            }
+
+            input[type=button] {
+                width: 100%;
+                margin: 0rem;
+            }
+
+            a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    }
+
+    .container-new-password {
+
+        form {
+            width: 90%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 510px) {
+
+    .container-new-password {
+
+        form {
+            width: 90%;
+            height: auto;
+
+            label {
+                font-size: 28px;
+            }
+
+            input {
+                width: 90%;
+            }
+
+            input::placeholder {
+                font-size: 80%;
+            }
+
+            input[type=button] {
+                width: 90%;
+                font-size: 28px;
+                margin: 1rem;
+            }
+
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .container-reset {
+
+        form {
+            width: 90%;
+
+            label {
+                font-size: 24px;
+            }
+
+            input {
+                width: 80%;
+            }
+
+            input::placeholder {
+                font-size: 34px;
+            }
+
+            input[type=button] {
+                width: 100%;
+                margin: 0rem;
+                font-size: 34px;
+            }
+
+            a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    }
+
+    .container-register {
+
+        form {
+            width: 90%;
+            height: auto;
+
+            input {
+                width: 90%;
+                margin: 1rem;
+            }
+
+            input::placeholder {
+                font-size: 80%;
+            }
+
+            input[type=button] {
+                width: 90%;
+                font-size: 28px;
+            }
+
+            input[type=radio] {
+                width: 10%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .container-reset {
+
+        form {
+            width: 90%;
+
+            label {
+                font-size: 20px;
+            }
+
+            input {
+                width: 80%;
+            }
+
+            input::placeholder {
+                font-size: 24px;
+            }
+
+            input[type=button] {
+                width: 100%;
+                margin: 0rem;
+                font-size: 24px;
+            }
+
+            a {
+                width: 80%;
+                text-align: center;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .container-register {
+
+        form {
+            width: 90%;
+            height: auto;
+
+            h2 {
+                font-size: 28px
+            }
+
+            input {
+                width: 90%;
+                height: 60px;
+                margin: 1rem;
+            }
+
+            input::placeholder {
+                font-size: 70%;
+            }
+
+            input[type=button] {
+                width: 90%;
+                font-size: 24px;
+                height: 60px;
+
+                .container-register {
+
+                    form {
+                        width: 90%;
+                        height: auto;
+
+                        h2 {
+                            font-size: 28px
+                        }
+
+                        input {
+                            width: 90%;
+                            height: 60px;
+                            margin: 1rem;
+                        }
+
+                        input::placeholder {
+                            font-size: 80%;
+                        }
+
+                        input[type=button] {
+                            width: 90%;
+                            height: 60px;
+                            font-size: 28px;
+                        }
+
+                        input[type=radio] {
+                            width: 10%;
+                        }
+                    }
+                }
+
+            }
+
+            input[type=radio] {
+                width: 10%;
+            }
+        }
+    }
+
+    .container-new-password {
+
+        form {
+            height: auto;
+
+            label {
+                font-size: 20px;
+            }
+
+            input {
+                width: 90%;
+                height: 60px;
+            }
+
+            input::placeholder {
+                font-size: 60%;
+            }
+
+            input[type=button] {
+                width: 90%;
+                font-size: 20px;
+                height: 60px;
+            }
+        }
+    }
 }
