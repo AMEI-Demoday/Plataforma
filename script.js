@@ -11,10 +11,14 @@ function logar() {
     if (login == "admin" && senha == "admin") {
         alert('Sucesso');
         location.href = "MEI/ferramentas.html";
-    } else {
+    }
+    else if (login == "admin2" && senha == "admin2") {
+        alert('Sucesso');
+        location.href = "MENTOR/consultas.html";
+    }
+    else {
         alert('Usuario ou senha incorretos');
     }
-
 }
 
 var button = document.getElementById('perfil');
@@ -31,6 +35,6 @@ button.addEventListener("click", function () {
     }
 })
 
-function Alerta(){
+function Alerta() {
     alert("Desculpe! Está parte ainda em produção!")
 }
