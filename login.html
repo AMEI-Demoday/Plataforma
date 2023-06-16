@@ -23,11 +23,11 @@
             </div>
 
             <div class="login-input">
-                <input type="text" placeholder="Usuario" required>
+                <input type="text" placeholder="Usuario" id="login" required>
             </div>
 
             <div class="login-input">
-                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Senha" id="senha" required>
             </div>
 
             <div class="login-input">
@@ -37,7 +37,7 @@
             </div>
 
             <div class="login-input">
-                <input type="submit" value="Entrar">
+                <input type="submit" value="Entrar" onclick="logar(); return false">
             </div>
 
             <div class="login-input">
@@ -46,12 +46,7 @@
         </form>
     </div>
 
-    <script>
-        function RegisterClick(){
-            var BtnRegister = document.getElementById('BtnRegister');
-            BtnRegister = location.href = "register.html"
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

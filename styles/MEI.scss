@@ -83,8 +83,12 @@ $default-color: #FFFFFF;
         width: 90%;
         height: 80px;
         border-radius: 8px;
-        background: $tertiary-color;
+        background: $secondary-color;
         cursor: pointer;
+
+        &:hover{
+            background: $tertiary-color;
+        }
 
         img {
             width: 20%;
@@ -124,10 +128,10 @@ $default-color: #FFFFFF;
             height: 240px;
             background: $alternative-color;
             box-shadow: 0px 2px 5px $shadow-color;
-            border-radius: 18px;
+            border-radius: 5px;
             cursor: pointer;
 
-            p{
+            p {
                 color: $default-color;
                 font-size: 25px;
                 font-weight: bold;
@@ -159,23 +163,23 @@ $default-color: #FFFFFF;
             height: auto;
             background: $tertiary-color;
             box-shadow: 0px 2px 5px $shadow-color;
-            border-radius: 18px;
+            border-radius: 5px;
             cursor: pointer;
 
-            img{
+            img {
                 width: 85%;
-                border-radius: 8px;
+                border-radius: 5px;
                 margin: 1.2rem;
             }
 
-            h2{
+            h2 {
                 color: $default-color;
                 font-size: 25px;
                 font-weight: bold;
                 text-transform: uppercase;
             }
 
-            p{
+            p {
                 width: 85%;
                 color: $default-color;
                 text-align: justify;
@@ -183,10 +187,36 @@ $default-color: #FFFFFF;
             }
 
             transition: 0.7s;
-            &:hover{
+
+            &:hover {
                 margin-top: -1rem;
                 transition: 0.7s;
             }
+        }
+    }
+}
+
+#logout {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 15.5px;
+    width: 260px;
+    height: 60px;
+    background: $secondary-color;
+    cursor: pointer;
+
+    a {
+        @include FlexCenter();
+        color: $default-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        height: 60px;
+
+        &:hover {
+            background: $tertiary-color;
+            border-radius: 5px;
         }
     }
 }

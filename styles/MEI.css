@@ -75,8 +75,11 @@
   width: 90%;
   height: 80px;
   border-radius: 8px;
-  background: #474F59;
+  background: #1F2226;
   cursor: pointer;
+}
+.sidebar .perfil:hover {
+  background: #474F59;
 }
 .sidebar .perfil img {
   width: 20%;
@@ -116,7 +119,7 @@
   height: 240px;
   background: #F27405;
   box-shadow: 0px 2px 5px #232323;
-  border-radius: 18px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .main-ferramentas .ferramentas .card-ferramentas p {
@@ -152,13 +155,13 @@
   height: auto;
   background: #474F59;
   box-shadow: 0px 2px 5px #232323;
-  border-radius: 18px;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.7s;
 }
 .main-treinamentos .treinamentos .card-treinamentos img {
   width: 85%;
-  border-radius: 8px;
+  border-radius: 5px;
   margin: 1.2rem;
 }
 .main-treinamentos .treinamentos .card-treinamentos h2 {
@@ -176,4 +179,29 @@
 .main-treinamentos .treinamentos .card-treinamentos:hover {
   margin-top: -1rem;
   transition: 0.7s;
+}
+
+#logout {
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  left: 15.5px;
+  width: 260px;
+  height: 60px;
+  background: #1F2226;
+  cursor: pointer;
+}
+#logout a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  height: 60px;
+}
+#logout a:hover {
+  background: #474F59;
+  border-radius: 5px;
 }/*# sourceMappingURL=MEI.css.map */

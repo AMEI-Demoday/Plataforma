@@ -26,11 +26,11 @@
             <div class="nav">
                 <a href="ferramentas.html">Ferramentas</a>
                 <a href="treinamentos.html">Treinamentos</a>
-                <a href="#">Mentorias</a>
-                <a href="#">Eventos</a>
-                <a href="#">Notificações</a>
+                <a href="#" onclick="Alerta()">Mentorias</a>
+                <a href="#" onclick="Alerta()">Eventos</a>
+                <a href="#" onclick="Alerta()">Notificações</a>
             </div>
-            <div class="perfil">
+            <div class="perfil" id="perfil">
                 <img src="../imgs/perfil.jpeg" alt="Imagem de Usuario">
                 <p>Iago Souza</p>
                 <img src="../imgs/question.png" alt="">
@@ -55,7 +55,13 @@
                 </div>
             </div>
         </div>
+
+        <div id="logout">
+            <a href="../index.html">Log Out</a>
+        </div>
     </section>
+    
+    <script src="../script.js"></script>
 </body>
 
 </html>
