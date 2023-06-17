@@ -31,7 +31,11 @@ $default-color: #FFFFFF;
         @include FlexCenter();
         color: $primary-color;
         font-size: 80px;
-        height: 25vh
+        height: 25vh;
+
+        img{
+            width: 70%;
+        }
     }
 
     .search {
