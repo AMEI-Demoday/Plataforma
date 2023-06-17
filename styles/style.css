@@ -66,7 +66,11 @@ section .home-page {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
+  text-align: center;
+}
+section .home-page .nav {
+  display: none;
 }
 section .home-page h1 {
   color: #FFF;
@@ -115,7 +119,7 @@ aside .container .content p {
 
 .container-about {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -135,6 +139,7 @@ aside .container .content p {
   color: #F27405;
   text-transform: uppercase;
   font-size: 40px;
+  text-align: center;
 }
 .container-about .about .container-iframe {
   display: flex;
@@ -340,10 +345,12 @@ aside .container .content p {
   font-size: 40px;
   color: #FFF;
   margin: 1rem;
+  text-align: center;
 }
 .container-events .info-events h3 {
   font-size: 80px;
   color: #F27405;
+  text-align: center;
 }
 .container-events .info-events-btn {
   display: flex;
@@ -1058,6 +1065,74 @@ aside .container .content p {
   }
   .container-new-password form {
     width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+  section .home-page {
+    height: 100vh;
+  }
+  section .home-page .nav {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+  }
+  section .home-page .nav button {
+    width: 120px;
+    height: 50px;
+    background: #F27405;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  aside {
+    display: none;
+  }
+  .container-plans .plans-header {
+    display: none;
+  }
+  .container-plans .card-plans {
+    width: 300px;
+  }
+  .container-plans .plans-footer h3 {
+    width: 200px;
+  }
+  .container-about p {
+    font-size: 14px;
+  }
+  .container-about .about h2 {
+    font-size: 30px;
+  }
+  .container-events h4 {
+    font-size: 10px;
+    height: 5%;
+  }
+  .container-contact form {
+    width: 90%;
+    height: auto;
+  }
+  .container-contact form .area input {
+    font-size: 13px;
+  }
+  .container-contact form .area input::-moz-placeholder {
+    font-size: 13px;
+  }
+  .container-contact form .area input::placeholder {
+    font-size: 13px;
+  }
+  .container-contact form textarea {
+    font-size: 14px;
+  }
+  .container-contact form textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  .container-contact form textarea::placeholder {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 510px) {
