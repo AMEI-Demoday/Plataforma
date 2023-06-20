@@ -69,6 +69,9 @@ section .home-page {
   height: 90vh;
   text-align: center;
 }
+section .home-page .logo {
+  display: none;
+}
 section .home-page .nav {
   display: none;
 }
@@ -507,7 +510,7 @@ aside .container .content p {
   background: #FFF;
   width: 400px;
   height: 610px;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 0px 1px 3px #232323;
 }
 .container-register form h2 {
@@ -527,7 +530,7 @@ aside .container .content p {
   height: 70px;
   border: none;
   background: #F9F6F6;
-  border-radius: 12px;
+  border-radius: 8px;
   margin: 0.5rem;
   padding: 15px;
   font-size: 36px;
@@ -550,7 +553,7 @@ aside .container .content p {
   border: none;
   background: #F27405;
   color: #FFF;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 15px;
   font-size: 42px;
   font-weight: bold;
@@ -1073,6 +1076,15 @@ aside .container .content p {
   }
   section .home-page {
     height: 100vh;
+  }
+  section .home-page .logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: block;
+  }
+  section .home-page .logo img {
+    width: 70px;
   }
   section .home-page .nav {
     position: absolute;

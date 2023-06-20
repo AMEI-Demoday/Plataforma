@@ -44,17 +44,17 @@
     <section>
         <div class="main-ferramentas">
             <div class="ferramentas">
-                <div class="card-ferramentas">
+                <div class="card-ferramentas" id="acesso" onclick="FluxoCaixa()">
+                    <img src="../imgs/fluxo-de-dinheiro.png" alt="Calculadora">
+                    <p>Fluxo de caixa</p>
+                </div>
+                <div class="card-ferramentas" onclick="Alerta()">
                     <img src="../imgs/calculadora.png" alt="Calculadora">
                     <p>Calculadora</p>
                 </div>
-                <div class="card-ferramentas">
-                    <img src="../imgs/calculadora.png" alt="Calculadora">
-                    <p>Calculadora</p>
-                </div>
-                <div class="card-ferramentas">
-                    <img src="../imgs/calculadora.png" alt="Calculadora">
-                    <p>Calculadora</p>
+                <div class="card-ferramentas" onclick="Alerta()">
+                    <img src="../imgs/lista-de-controle.png" alt="Calculadora">
+                    <p>CONTROLE ESTOQUE</p>
                 </div>
             </div>
         </div>
@@ -66,6 +66,13 @@
     </section>
     
     <script src="../script.js"></script>
+
+    <script>
+        function FluxoCaixa(){
+            var acesso = document.getElementById('acesso');
+            acesso = location.href = "../Ferramentas/FluxoCaixa.html"
+        }
+    </script>
 </body>
 
 </html>
