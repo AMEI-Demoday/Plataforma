@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Playlist UI Design Like Udemy | SkillShare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../imgs/logo.png" alt="Logo do Projeto">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Pesquisar">
+            </div>
+            <div class="nav">
+                <a href="../MEI/ferramentas.html">Ferramentas</a>
+                <a href="../MEI/treinamentos.html">Treinamentos</a>
+                <a href="#" onclick="Alerta()">Mentorias</a>
+                <a href="#" onclick="Alerta()">Eventos</a>
+                <a href="#" onclick="Alerta()">Notificações</a>
+            </div>
+            <div class="perfil" id="perfil">
+                <img src="../imgs/perfil.jpeg" alt="Imagem de Usuario">
+                <p>Iago Souza</p>
+                <img src="../imgs/question.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="main-video">
+            <h3 class="title">Title of the playing Video 3</h3>
+            <video src="videos/manipulate text background.mp4" controls></video>
+        </section>
+        
+        <section class="video-playlist">
+            <h3 class="title">Vizualizar vídeos da Playlist</h3>
+            <p>10 lessions &nbsp; . &nbsp; 50m 48s</p>
+            <div class="videos">
+
+            </div>
+        </section>
+    </main>
+
+    <div id="logout">
+        <a href="../MEI/perfil.html">Perfil</a>
+        <a href="../index.html">Log Out</a>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

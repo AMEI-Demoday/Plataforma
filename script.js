@@ -38,3 +38,18 @@ button.addEventListener("click", function () {
 function Alerta() {
     alert("Desculpe! Está parte ainda em produção!")
 }
+
+function CursoEmpreender() {
+    var CursoUm = document.getElementById('CursoUm')
+    CursoUm = location.href = "../Empreendedorismo/index.html"
+}
+
+function CursoMarketing(){
+    var CursoDois = document.getElementById('CursoUm')
+    CursoDois = location.href = "../Marketing-Digital/index.html"
+}
+
+function CursoGestao(){
+    var CursoTres = document.getElementById('CursoUm')
+    CursoTres = location.href = "../Gestao-Financeira/index.html"
+}

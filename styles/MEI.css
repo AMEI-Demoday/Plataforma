@@ -315,4 +315,47 @@
 #logout a:hover {
   background: #474F59;
   border-radius: 5px;
+}
+
+.main-curso-empreendedorismo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  float: left;
+  background: #1F2226;
+}
+.main-curso-empreendedorismo h2 {
+  text-transform: uppercase;
+  color: #FF8F2C;
+  font-size: 40px;
+  margin: 1rem;
+}
+.main-curso-empreendedorismo iframe {
+  width: 720px;
+  height: 420px;
+  border: 1rem solid #F27405;
+}
+.main-curso-empreendedorismo .btn-curso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+.main-curso-empreendedorismo .btn-curso input {
+  padding: 1rem 2rem;
+  background: #F27405;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1rem;
+}
+.main-curso-empreendedorismo .btn-curso input:hover {
+  background: #FF8F2C;
+  color: #FFFFFF;
 }/*# sourceMappingURL=MEI.css.map */
