@@ -25,6 +25,7 @@ html {
 header {
     @include FlexCenter;
     width: 100%;
+    position: fixed;
 
     .navbar {
         @include FlexCenter();
@@ -32,7 +33,6 @@ header {
         background: $default-color;
         width: 100%;
         height: 90px;
-        border-radius: 12px;
 
         a {
             width: 13%;
@@ -82,7 +82,7 @@ section {
         background-repeat: no-repeat;
         @include FlexCenter();
         flex-direction: column;
-        height: 90vh;
+        height: 100vh;
         text-align: center;
 
         .logo {
@@ -105,38 +105,6 @@ section {
             color: $default-color;
             font-size: 24px;
             text-align: center;
-        }
-    }
-}
-
-aside {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 80%;
-    height: 265px;
-    background: $tertiary-color;
-    border-radius: 12px;
-    box-shadow: 0px 1px 2px #232323;
-
-    .container {
-        @include FlexCenter();
-
-        .content {
-            width: 30%;
-            @include FlexCenter();
-            flex-direction: column;
-            text-align: justify;
-            color: $primary-color;
-
-            img {
-                margin: 2rem;
-            }
-
-            p {
-                margin: 1rem;
-            }
         }
     }
 }
@@ -276,32 +244,6 @@ aside {
             h3 {
                 height: 100%;
                 @include FlexCenter()
-            }
-        }
-    }
-
-    .plans-footer {
-        @include FlexCenter();
-        width: 100%;
-        height: 50px;
-        background: transparent;
-        border-radius: 12px;
-        margin: 2rem;
-
-        h3 {
-            @include FlexCenter();
-            background: $primary-color;
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 150%;
-            color: $default-color;
-            cursor: pointer;
-            width: 15%;
-            height: 50px;
-            border-radius: 12px;
-
-            &:hover {
-                background: $alternative-color;
             }
         }
     }
@@ -817,9 +759,8 @@ aside {
     header {
         .navbar {
             @include FlexCenter();
-            width: 95%;
+            width: 100%;
             height: 90px;
-            border-radius: 18px;
 
             a {
                 font-size: 24px;
@@ -833,33 +774,6 @@ aside {
                 width: 130px;
                 height: 45px;
                 font-size: 20px;
-            }
-        }
-    }
-
-    aside {
-        width: 85%;
-        height: auto;
-
-        .container {
-            @include FlexCenter();
-
-            .content {
-                width: 30%;
-                @include FlexCenter();
-                flex-direction: column;
-                text-align: justify;
-                color: $primary-color;
-
-                img {
-                    width: 20%;
-                    margin: 1rem;
-                }
-
-                p {
-                    margin: 1rem;
-                    font-size: 14px;
-                }
             }
         }
     }
@@ -890,10 +804,6 @@ aside {
         @include FlexCenter();
         flex-direction: column;
 
-        .paragrafo {
-            display: none;
-        }
-
         .about {
             .container-iframe {
 
@@ -922,15 +832,6 @@ aside {
 
         .plans-header {
             h2 {
-                font-size: 100%;
-                width: 20%;
-                height: 50px;
-            }
-        }
-
-        .plans-footer {
-
-            h3 {
                 font-size: 100%;
                 width: 20%;
                 height: 50px;
@@ -1210,10 +1111,6 @@ aside {
         }
     }
 
-    aside {
-        display: none;
-    }
-
     .container-plans {
         .plans-header {
             display: none;
@@ -1221,12 +1118,6 @@ aside {
 
         .card-plans {
             width: 300px;
-        }
-
-        .plans-footer {
-            h3 {
-                width: 200px;
-            }
         }
     }
 

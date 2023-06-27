@@ -43,43 +43,7 @@
         </div>
     </section>
 
-    <aside>
-        <div class="container">
-            <div class="content">
-                <img src="imgs/Missao.png" alt="Missão">
-                <p>A Amei nasceu com o proposito de ajudar micro empreendedores da periferia a profissionalizar e
-                    expandir seus negócios, através da tecnológia. </p>
-            </div>
-
-            <div class="content">
-                <img src="imgs/Visao.png" alt="Missão">
-                <p>A Amei nasceu da convicção de que o empreendedorismo é uma ferramenta poderosa para a transformação
-                    social e econômica. </p>
-            </div>
-
-            <div class="content">
-                <img src="imgs/Valores.png" alt="Missão">
-                <p>Acreditamos no talento e determinação de nossos clientes por isso oferecemos a eles a melhor versão
-                    de nós para seu negócio. </p>
-            </div>
-        </div>
-    </aside>
-
     <section class="container-about" id="about">
-
-        <div class="paragrafo">
-            <p>• Reconhecendo que o acesso a recursos financeiros é uma das maiores barreiras enfrentadas pelos
-                microempreendedores da periferia, estabelecemos parcerias estratégicas com instituições financeiras e
-                investidores que compartilham nossa visão.</p>
-
-            <p>• Trabalhamos ativamente para conectar os empreendedores a fontes de financiamento adequadas,
-                auxiliando-os no desenvolvimento de planos de negócios sólidos e atraentes, além de ajudá-los a navegar
-                pelo processo de solicitação de empréstimos e investimentos.</p>
-
-            <p>• Além disso, também fornecemos orientação sobre gestão financeira eficaz, ensinando os empreendedores a
-                monitorar seus fluxos de caixa, a controlar custos e a otimizar seus recursos.</p>
-        </div>
-
         <div class="about">
             <h2>Historias que Inspiram</h2>
             <div class="container-iframe">
@@ -171,10 +135,6 @@
                     <h3>Ver Plano</h3>
                 </div>
             </div>
-
-            <div class="plans-footer">
-                <h3>Mais Opções</h3>
-            </div>
         </div>
     </section>
 
@@ -184,7 +144,7 @@
             <div class="content-events">
                 <div class="calendar">
                     <div class="timer">
-                        <p>53</p>
+                        <p id="days"></p>
                     </div>
                     <div class="timer-info">
                         <p>Dias</p>
@@ -192,7 +152,7 @@
                 </div>
                 <div class="calendar">
                     <div class="timer">
-                        <p>12</p>
+                        <p id="hours"></p>
                     </div>
                     <div class="timer-info">
                         <p>Horas</p>
@@ -200,7 +160,7 @@
                 </div>
                 <div class="calendar">
                     <div class="timer">
-                        <p>05</p>
+                        <p id="mins"></p>
                     </div>
                     <div class="timer-info">
                         <p>Minutos</p>
@@ -208,7 +168,7 @@
                 </div>
                 <div class="calendar">
                     <div class="timer">
-                        <p>37</p>
+                        <p id="seconds"></p>
                     </div>
                     <div class="timer-info">
                         <p>Segundos</p>
@@ -267,6 +227,39 @@
 
             AreaCliente = location.href = "login.html";
         }
+
+        const daysEl = document.getElementById('days');
+        const hoursEl = document.getElementById('hours');
+        const minsEl = document.getElementById('mins');
+        const secondssEl = document.getElementById('seconds');
+
+        const newYears = "1 Jan 2024"
+
+        function countDown() {
+
+            const newYearsDate = new Date(newYears);
+            const currentDate = new Date();
+
+            const totalSeconds = (newYearsDate - currentDate) / 1000;
+
+            const days = Math.floor(totalSeconds / 3600 / 24);
+            const hours = Math.floor(totalSeconds / 3600) % 24;
+            const mins = Math.floor(totalSeconds / 60) % 60;
+            const seconds = Math.floor(totalSeconds) % 60;
+
+            daysEl.innerHTML = days;
+            hoursEl.innerHTML = formatTime(hours);
+            minsEl.innerHTML = formatTime(mins);
+            secondssEl.innerHTML = formatTime(seconds);
+        }
+
+        function formatTime(time) {
+            return time < 10 ? `0${time}` : time
+        }
+
+        countDown();
+
+        setInterval(countDown, 1000);
     </script>
 </body>
 
