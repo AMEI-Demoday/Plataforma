@@ -142,7 +142,13 @@ section {
             flex-direction: column;
 
             .iframe-paragrafo {
+                @include FlexCenter();
+                flex-direction: column;
                 width: 65%;
+
+                img {
+                    width: 30%;
+                }
             }
         }
     }
@@ -198,7 +204,7 @@ section {
                 font-size: 50px;
             }
 
-            h4{
+            h4 {
                 width: 90%;
                 margin: 0 auto;
                 color: $dark-color;
@@ -1127,7 +1133,7 @@ section {
     }
 
     .container-events {
-        
+
         h4 {
             font-size: 10px;
             height: 5%;
@@ -1160,7 +1166,7 @@ section {
     }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 520px) {
 
     .container-new-password {
 
@@ -1189,6 +1195,61 @@ section {
             a {
                 width: 100%;
                 text-align: center;
+            }
+        }
+    }
+
+    .container-events {
+        h2 {
+            font-size: 50px;
+        }
+
+        .content-events {
+            .calendar {
+                margin: 0% 4%;
+                .timer {
+                    width: 80px;
+                    height: 60px;
+
+                    p {
+                        height: 60px;
+                        font-size: 30px;
+                    }
+                }
+
+                .timer-info {
+                    width: 80px;
+                    height: 24px;
+
+                    p {
+                        height: 24px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .info-events {
+            p {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        .info-events-btn{
+            button{
+                width: 130px;
+                height: 50px;
+                font-size: 12px;
+            }
+
+            button:nth-child(2){
+                width: 130px;
+                height: 50px;
+                font-size: 12px;
             }
         }
     }
