@@ -21,12 +21,12 @@
             <a href="index.html">
                 <img src="imgs/logo.png" alt="Logo do Projeto">
             </a>
-            <a href="#home">Inicio</a>
+            <a href="#home">Início</a>
             <a href="#about">Sobre</a>
             <a href="#plans">Planos</a>
             <a href="#events">Eventos</a>
             <a href="#contact">Contato</a>
-            <button id="AreaCliente" onclick="AreaLogin()">Area Cliente</button>
+            <button id="AreaCliente" onclick="AreaLogin()">Área Cliente</button>
         </div>
     </header>
 
@@ -38,16 +38,60 @@
             <div class="nav">
                 <button id="AreaCliente" onclick="AreaLogin()">Area Cliente</button>
             </div>
-            <h1>Seja Bem Vindo</h1>
-            <p>Somos uma empresa que presa pelo crescimento do microempreendedor periferico.</p>
+            <h1>Seja Bem-Vindo</h1>
+            <p>Somos uma empresa que preza pelo crescimento do microempreendedor periférico.</p>
         </div>
     </section>
 
+    <div class="empresa">
+        <div class="junto1">
+            <div class="imgmis">
+                <img src="imgs/Missao.png">
+            </div>
+            <div class="missao">
+                <p>Queremos guiar microempreendedores com o desenvolvimento de seu negócio para se tornarem grandes
+                    empresas.</p>
+            </div>
+        </div>
+        <div class="junto2">
+            <div class="imgvis">
+                <img src="imgs/Visao.png">
+            </div>
+            <div class="visao">
+                <p>Referência no mercado quando se tratar de microempreendedores do ramo alimentício.</p>
+            </div>
+        </div>
+        <div class="junto3">
+            <div class="imgval">
+                <img src="imgs/Valores.png">
+            </div>
+            <div class="valores">
+                <p>Acreditamos no talento e determinação de nossos clientes por isso oferecemos a eles a melhor versão
+                    de nós para seu negócio, sempre com empatia, ética, inovação e responsabilidade.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <section class="container-about" id="about">
+        <div class="titusob">
+            <p>Conheça a AMEI</p>
+        </div>
+        <div class="sobre">
+            <p>Surgimos em 2023 com o objetivo de profissionalizar o microempreendedor periférico do ramo
+                alimentício.
+                Nosso foco é fazer a sua empresa crescer para que você seja bem sucedido, através de mentorias e
+                diversas ferramentas que se encontram na plataforma.</p>
+        </div>
         <div class="about">
-            <h2>Historias que Inspiram</h2>
-            <div class="container-iframe">
-                <div class="iframe-paragrafo">
+             <div class="imgfe">
+                <img src="imgs/ExemploProfissional.jpeg" alt="Fernanda" id="id_img">
+             </div>
+             <div class="tudfe">
+                <div class="titfe">
+                    <h2>Histórias que Inspiram</h2>
+                </div>
+                <div class="texfe">
                     <p>Fernanda iniciou sua carreira como vendedora de marmitas em 2010, onde começou a vender marmitas
                         para motoristas de ônibus.</p>
                     <p>Fernanda não queria manter aquele negócio todos os dias por conta de sua rotina exaustiva. Sua
@@ -56,12 +100,18 @@
                     <p>Mas ela acabou quebrando pois ela não sabia fazer a gestão de sua micro empresa, não sabia
                         administrar e reconhecer o que era lucro pessoal e lucro do seu negócio, e por isso, Fernanda
                         acabou fechando sua microempresa e desistindo de seu negócio.</p>
-                    <img src="imgs/ExemploProfissional.jpeg" alt="Fernanda">
                 </div>
+             </div>
+           <!-- <div class="espimg">
+                <img src="imgs/ExemploProfissional.jpeg" alt="Fernanda" width="250px">
             </div>
+            <div class="container-iframe">
+                <div class="iframe-paragrafo">
+                    
+                </div>
+            </div> -->
         </div>
     </section>
-
     <section id="plans">
         <div class="container-plans">
             <div class="card-plans">
@@ -69,11 +119,13 @@
                     <h3>Plano Mensal</h3>
                 </div>
                 <div class="card-section">
-                    <h3>$59,90</h3>
-                    <p>• Ferramentas Administrativas</p>
-                    <p>• Treinamentos Personalizados</p>
-                    <p>• Mentorias Exclusivas</p>
-                    <p>• Suporte Online 24h</p>
+                    <h3>R$59,90</h3>
+                    <p>Ferramentas de Gestão</p>
+                    <p>Treinamentos Personalizados</p>
+                    <p>Mentorias Exclusivas</p>
+                    <p>Eventos Exclusivos</p>
+                    <p>Suporte Online</p>
+                    <p>Gestor de Tráfego</p>
                 </div>
                 <div class="card-button">
                     <h3>Ver Plano</h3>
@@ -84,11 +136,13 @@
                     <h3>Plano Trimestral</h3>
                 </div>
                 <div class="card-section">
-                    <h3>$169,99</h3>
-                    <p>• Ferramentas Administrativas</p>
-                    <p>• Treinamentos Personalizados</p>
-                    <p>• Mentorias Exclusivas</p>
-                    <p>• Suporte Online 24h</p>
+                    <h3>R$169,99</h3>
+                    <p>Ferramentas de Gestão</p>
+                    <p>Treinamentos Personalizados</p>
+                    <p>Mentorias Exclusivas</p>
+                    <p>Eventos Exclusivos</p>
+                    <p>Suporte Online</p>
+                    <p>Gestor de Tráfego</p>
                 </div>
                 <div class="card-button">
                     <h3>Ver Plano</h3>
@@ -99,29 +153,33 @@
                     <h3>Plano Semestral</h3>
                 </div>
                 <div class="card-section">
-                    <h3>$299,90</h3>
-                    <p>• Ferramentas Administrativas</p>
-                    <p>• Treinamentos Personalizados</p>
-                    <p>• Mentorias Exclusivas</p>
-                    <p>• Suporte Online 24h</p>
+                    <h3>R$299,90</h3>
+                    <p>Ferramentas de Gestão</p>
+                    <p>Treinamentos Personalizados</p>
+                    <p>Mentorias Exclusivas</p>
+                    <p>Eventos Exclusivos</p>
+                    <p>Suporte Online</p>
+                    <p>Gestor de Tráfego</p>
                 </div>
                 <div class="card-button">
                     <h3>Ver Plano</h3>
                 </div>
             </div>
             <div class="card-plans">
-                <div class="title" style="background: #232323;">
+                <div class="title" style="background: #574F4F;">
                     <h3>Plano Anual</h3>
                 </div>
                 <div class="card-section">
-                    <h3 style="color: #232323;">$499,99</h3>
+                    <h3 style="color: #232323;">R$499,99</h3>
                     <h4>Melhor Preço!</h4>
-                    <p>• Ferramentas Administrativas</p>
-                    <p>• Treinamentos Personalizados</p>
-                    <p>• Mentorias Exclusivas</p>
-                    <p>• Suporte Online 24h</p>
+                    <p>Ferramentas de Gestão</p>
+                    <p>Treinamentos Personalizados</p>
+                    <p>Mentorias Exclusivas</p>
+                    <p>Eventos Exclusivos</p>
+                    <p>Suporte Online</p>
+                    <p>Gestor de Tráfego</p>
                 </div>
-                <div class="card-button" style="background: #232323;">
+                <div class="card-button" style="background: #574F4F;">
                     <h3>Ver Plano</h3>
                 </div>
             </div>
@@ -180,6 +238,29 @@
         </div>
     </section>
 
+    <div class="tudo">
+        <div class="apoiadores">
+            <div class="nome">
+                <p>APOIADORES</p>
+            </div>
+            <div class="imgns">
+                <div class="proa">
+                    <img src="imgs/Imagem1.jpg" width="200vh">
+                    <p>Instituto Proa</p>
+                </div>
+                <div class="easy">
+                    <img src="imgs/Logo Easy.jpg" width="200vh">
+                    <p>Easy Hotéis</p>
+                </div>
+                <div class="senac">
+                    <img src="imgs/Logo Senac sem fundo.jpg" width="200vh">
+                    <p>Senac</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <section id="contact">
         <div class="container-contact">
             <form>
@@ -204,6 +285,8 @@
             </form>
         </div>
     </section>
+
+
 
     <footer>
         <div class="footer">
