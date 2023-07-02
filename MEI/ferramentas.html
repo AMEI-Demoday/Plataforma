@@ -48,10 +48,10 @@
                     <img src="../imgs/fluxo-de-dinheiro.png" alt="Calculadora">
                     <p>Fluxo de caixa</p>
                 </div>
-                <div class="card-ferramentas" onclick="Alerta()">
-                    <img src="../imgs/calculadora.png" alt="Calculadora">
-                    <p>Calculadora</p>
-                </div>
+                    <div class="card-ferramentas" id="acesso" onclick="Calculadora()">
+                        <img src="../imgs/calculadora.png" alt="Calculadora">
+                        <p>Calculadora</p>
+                    </div>
                 <div class="card-ferramentas" onclick="Alerta()">
                     <img src="../imgs/lista-de-controle.png" alt="Calculadora">
                     <p>CONTROLE ESTOQUE</p>
@@ -64,13 +64,18 @@
             <a href="../index.html">Log Out</a>
         </div>
     </section>
-    
+
     <script src="../script.js"></script>
 
     <script>
-        function FluxoCaixa(){
+        function FluxoCaixa() {
             var acesso = document.getElementById('acesso');
             acesso = location.href = "../Ferramentas/FluxoCaixa.html"
+        }
+
+        function Calculadora() {
+            var acesso = document.getElementById('acesso');
+            acesso = location.href = '../Ferramentas/calculadora.html'
         }
     </script>
 </body>
