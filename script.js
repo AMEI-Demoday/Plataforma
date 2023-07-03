@@ -1,6 +1,6 @@
 function RegisterClick() {
     var BtnRegister = document.getElementById('BtnRegister');
-    BtnRegister = location.href = "register.html"
+    BtnRegister = location.href = "cadastrologin.html"
 }
 
 function logar() {
