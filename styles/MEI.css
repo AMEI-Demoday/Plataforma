@@ -72,6 +72,13 @@
 .sidebar .nav a img {
   display: none;
 }
+.sidebar .nav a:nth-child(2),
+.sidebar .nav a:nth-child(4),
+.sidebar .nav a:nth-child(6),
+.sidebar .nav a:nth-child(8),
+.sidebar .nav a:nth-child(10) {
+  display: none;
+}
 .sidebar .perfil {
   display: flex;
   justify-content: center;
@@ -383,6 +390,20 @@
   .sidebar .nav a img {
     margin: 0 auto;
     display: block;
+  }
+  .sidebar .nav a:nth-child(2),
+  .sidebar .nav a:nth-child(4),
+  .sidebar .nav a:nth-child(6),
+  .sidebar .nav a:nth-child(8),
+  .sidebar .nav a:nth-child(10) {
+    display: block;
+  }
+  .sidebar .nav a:nth-child(1),
+  .sidebar .nav a:nth-child(3),
+  .sidebar .nav a:nth-child(5),
+  .sidebar .nav a:nth-child(7),
+  .sidebar .nav a:nth-child(9) {
+    display: none;
   }
   .sidebar .search {
     display: none;

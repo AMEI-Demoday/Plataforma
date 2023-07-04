@@ -82,6 +82,14 @@ $default-color: #FFFFFF;
                 display: none
             }
         }
+
+        a:nth-child(2),
+        a:nth-child(4),
+        a:nth-child(6),
+        a:nth-child(8),
+        a:nth-child(10) {
+            display: none;
+        }
     }
 
     .perfil {
@@ -379,7 +387,7 @@ $default-color: #FFFFFF;
     .sidebar {
         .perfil {
             margin: 0 auto;
-            
+
 
             img {
                 width: 40%;
@@ -406,57 +414,74 @@ $default-color: #FFFFFF;
                     display: block;
                 }
             }
+
+            a:nth-child(2),
+            a:nth-child(4),
+            a:nth-child(6),
+            a:nth-child(8),
+            a:nth-child(10) {
+                display: block;
+            }
+
+            a:nth-child(1),
+            a:nth-child(3),
+            a:nth-child(5),
+            a:nth-child(7),
+            a:nth-child(9) {
+                display: none;
+            }
         }
 
-        .search{
+        .search {
             display: none;
         }
     }
 
-    .main-ferramentas{
-        .ferramentas{
-            .card-ferramentas{
+    .main-ferramentas {
+        .ferramentas {
+            .card-ferramentas {
                 width: 200px;
                 height: 200px;
 
-                img{
+                img {
                     width: 50%;
                 }
 
-                p{
+                p {
                     font-size: 16px;
                 }
             }
         }
     }
 
-    .main-treinamentos{
-        .treinamentos{
-            .card-treinamentos{
+    .main-treinamentos {
+        .treinamentos {
+            .card-treinamentos {
                 width: 200px;
                 height: 200px;
 
-                img{
+                img {
                     width: 50%;
                 }
 
-                p{
+                p {
                     font-size: 20px;
                 }
             }
         }
     }
 
-    .main-perfil{
-        .perfil{
-            .Perfil-LadoEsquerdo{
+    .main-perfil {
+        .perfil {
+            .Perfil-LadoEsquerdo {
                 width: 100%;
-                input{
+
+                input {
                     font-size: 18px;
                 }
             }
 
-            .Perfil-LadoDireito{
+            .Perfil-LadoDireito {
                 display: none;
             }
         }
