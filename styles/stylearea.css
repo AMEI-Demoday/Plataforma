@@ -13,25 +13,26 @@ body {
 .container {
   width: 450px;
   background-color: #474F59;
-  ;
   border: 5px solid #474F59;
   border-radius: 8px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login {
+  text-align: center;
   font-size: 45px;
   font-family: 'Nunito', sans-serif;
   color: #ffffff;
   font-weight: bold;
-  margin-left: 145px;
 }
 
 .form {
-  width: 490px;
-  height: 330px;
-  margin-top: 75px;
-
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 input{
@@ -44,16 +45,13 @@ input{
 .numero,
 .email,
 .texto {
-  margin-top: 10px;
-  margin-bottom: 15px;
-
+  margin: 1rem 0rem;
 }
 
-
 .btn-primary {
-  margin-top: 15px;
+  margin: 1rem 0rem;
   width: 400px;
-  height: 40px;
+  height: 50px;
   background-color: #ff7700;
   font-family: 'PT sans', sans-serif;
   font-size: 25px;
@@ -63,7 +61,6 @@ input{
 }
 
 .btn-primary:hover {
-  margin-bottom: 10px;
   background-color: #FF8F2C;
   border-color: #FF8F2C;
   font-family: 'PT sans', sans-serif;

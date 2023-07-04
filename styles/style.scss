@@ -412,14 +412,14 @@ section {
                 @include FlexCenter();
                 height: 60px;
                 font-size: 26px;
-                opacity: 0.3;
+                opacity: 0.5;
             }
 
             input[type=email] {
                 width: 80%;
             }
 
-            input[type=button] {
+            input[type=submit] {
                 width: 80%;
                 color: $default-color;
                 background: $primary-color;
@@ -449,7 +449,7 @@ section {
             @include FlexCenter();
             height: 60px;
             font-size: 26px;
-            opacity: 0.3;
+            opacity: 0.5;
         }
     }
 }

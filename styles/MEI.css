@@ -69,6 +69,9 @@
   color: #1F2226;
   border-radius: 8px;
 }
+.sidebar .nav a img {
+  display: none;
+}
 .sidebar .perfil {
   display: flex;
   justify-content: center;
@@ -358,4 +361,59 @@
 .main-curso-empreendedorismo .btn-curso input:hover {
   background: #FF8F2C;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 850px) {
+  .sidebar .perfil {
+    margin: 0 auto;
+  }
+  .sidebar .perfil img {
+    width: 40%;
+    border-radius: 50%;
+  }
+  .sidebar .perfil img:nth-child(3) {
+    display: none;
+  }
+  .sidebar .perfil p {
+    display: none;
+  }
+  .sidebar .nav a p {
+    display: none;
+  }
+  .sidebar .nav a img {
+    margin: 0 auto;
+    display: block;
+  }
+  .sidebar .search {
+    display: none;
+  }
+  .main-ferramentas .ferramentas .card-ferramentas {
+    width: 200px;
+    height: 200px;
+  }
+  .main-ferramentas .ferramentas .card-ferramentas img {
+    width: 50%;
+  }
+  .main-ferramentas .ferramentas .card-ferramentas p {
+    font-size: 16px;
+  }
+  .main-treinamentos .treinamentos .card-treinamentos {
+    width: 200px;
+    height: 200px;
+  }
+  .main-treinamentos .treinamentos .card-treinamentos img {
+    width: 50%;
+  }
+  .main-treinamentos .treinamentos .card-treinamentos p {
+    font-size: 20px;
+  }
+  .main-perfil .perfil .Perfil-LadoEsquerdo {
+    width: 100%;
+  }
+  .main-perfil .perfil .Perfil-LadoEsquerdo input {
+    font-size: 18px;
+  }
+  .main-perfil .perfil .Perfil-LadoDireito {
+    display: none;
+  }
 }/*# sourceMappingURL=MEI.css.map */

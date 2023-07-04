@@ -394,7 +394,7 @@ section .home-page p {
   align-items: center;
   height: 60px;
   font-size: 26px;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .container-contact form .area input::placeholder {
   display: flex;
@@ -402,12 +402,12 @@ section .home-page p {
   align-items: center;
   height: 60px;
   font-size: 26px;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .container-contact form .area input[type=email] {
   width: 80%;
 }
-.container-contact form .area input[type=button] {
+.container-contact form .area input[type=submit] {
   width: 80%;
   color: #FFF;
   background: #F27405;
@@ -415,7 +415,7 @@ section .home-page p {
   cursor: pointer;
   margin: 2rem;
 }
-.container-contact form .area input[type=button]:hover {
+.container-contact form .area input[type=submit]:hover {
   background: #fd8720;
 }
 .container-contact form textarea {
@@ -435,7 +435,7 @@ section .home-page p {
   align-items: center;
   height: 60px;
   font-size: 26px;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .container-contact form textarea::placeholder {
   display: flex;
@@ -443,7 +443,7 @@ section .home-page p {
   align-items: center;
   height: 60px;
   font-size: 26px;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .container-register {

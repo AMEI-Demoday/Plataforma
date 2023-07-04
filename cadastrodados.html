@@ -23,7 +23,7 @@
           <div class="furmule">
             <div class="cadastrar">Cadastre-se</div>
 
-            <input type="hidden" value={obj.id_dados_usuario} onChange={eventoTeclado} name="id_dados_usuario" id="id_dados_usuario" placeholder="Digite o id" class="form-control" />
+            <input type="hidden" value={obj.id_dados_usuario} onChange={eventoTeclado} name="id_dados_usuario" id="id_dados_usuario" placeholder="Digite o id" class="form-control"/>
             <div class="nome">
               <input type="name" value={obj.nome_completo} onChange={eventoTeclado} name="nome_completo" placeholder="Digite seu nome completo" class="form-control"/>
             </div>
@@ -59,7 +59,7 @@
             </div>
 
             <div class="texto">
-              <input type="text" value={obj.uf} onChange={eventoTeclado} name="uf" placeholder="Qual o UF do seu estado" class="form-control" />
+              <input type="text" value={obj.uf} onChange={eventoTeclado} name="uf" placeholder="Digite nome do seu estado" class="form-control"/>
             </div>
 
             <input type="button" value="Cadastrar" onClick={cadastrar} class="btn-primary" />
