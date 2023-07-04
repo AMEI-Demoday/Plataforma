@@ -34,8 +34,44 @@
   estabelecer uma conexão emocional com nosso público-alvo.</p>
 </div><br>
 
+
 <div align="justify">
-  <h2>Escolha das cores</h2>
+  <h2>Linguagens Utilizadas</h2>
+  <p>O projeto utiliza as seguintes linguagens e tecnologias:</p>
+  <ul>
+    <li>HTML</li>
+    <li>JavaScript</li>
+    <li>CSS</li>
+    <li>SASS (pré-processador CSS)</li>
+    <li>MySQL</li>
+    <li>Java</li>
+  </ul>
+</div><br>
+
+<div align="justify">
+  <h2>Backend</h2>
+  <p>Para o desenvolvimento do backend, utilizamos Java em conjunto com o framework Spring Boot. O Spring Boot nos permite criar uma aplicação Java robusta e escalável, facilitando a integração com o banco de dados MySQL. Com o Spring Boot, implementamos as funcionalidades de CRUD (Create, Read, Update, Delete), permitindo cadastrar, deletar, listar e alterar registros no banco de dados.</p>
+</div><br>
+
+<div align="justify">
+  <h2>Comunicação Frontend-Backend</h2>
+  <p>Para a comunicação entre o frontend e o backend, utilizamos o comando Fetch. Com o Fetch, podemos realizar requisições HTTP do frontend para o backend, permitindo o acesso e manipulação dos dados armazenados no banco de dados MySQL.</p>
+</div><br>
+
+<div align="justify">
+  <h2>Estrutura de Arquivos</h2>
+  <ul>
+    <li><code>index.html</code>: Página inicial do site.</li>
+    <li><code>css/</code>: Diretório contendo os arquivos CSS.</li>
+    <li><code>js/</code>: Diretório contendo os arquivos JavaScript.</li>
+    <li><code>sass/</code>: Diretório contendo os arquivos SASS.</li>
+    <li><code>src/</code>: Diretório contendo os arquivos do backend em Java.</li>
+
+  </ul>
+</div><br>
+
+<div align="justify">
+  <h2>Cores</h2>
   <p>As cores desempenham um papel fundamental na identidade visual da AMEI. Optamos por uma combinação cuidadosamente escolhida para transmitir os valores e objetivos da nossa startup:</p>
   <p>• Laranja: A cor laranja foi escolhida para simbolizar alegria, vitalidade, prosperidade e sucesso. Queremos transmitir uma sensação de energia positiva e otimismo, incentivando os microempreendedores a acreditar em seu potencial e alcançar o sucesso.</p>
   <p>• Preto: O preto é uma cor que representa elegância e sofisticação. Queremos transmitir a mensagem de que a gestão profissional e a profissionalização do negócio podem trazer um ar de refinamento e destaque para os empreendedores.</p>
@@ -46,4 +82,13 @@
 <img src="https://github.com/Ismael-Oficial/AMEI/assets/125465461/f20d992a-f833-4f72-a074-a061de9d8df1">
 </div><br>
 
+<div align="justify">
+  <h2>Contato</h2>
+  <p><strong>Website:</strong> https://amei-demoday.github.io/Plataforma/
+    <br>
+  Agradecemos por visitar nosso repositório! Esperamos que nosso projeto seja útil e traga benefícios para os microempreendedores da área alimentícia.
+  </p>
+</div><br>
+
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=F27405&height=120&section=footer"/>
+
